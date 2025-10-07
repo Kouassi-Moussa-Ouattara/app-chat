@@ -1,0 +1,89 @@
+{
+  "configVersion": 1,
+  "timestamp": 1759869444028,
+  "index": "/app-chat/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/app-chat/chunk-5M6RYT4N.js",
+        "/app-chat/chunk-IUOOMVWF.js",
+        "/app-chat/chunk-SKL7SYOU.js",
+        "/app-chat/chunk-XD6L3HVD.js",
+        "/app-chat/favicon.ico",
+        "/app-chat/index.html",
+        "/app-chat/main-M3PCKG6U.js",
+        "/app-chat/manifest.webmanifest",
+        "/app-chat/polyfills-B6TNHZQ6.js",
+        "/app-chat/styles-CFUAOWLE.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/app-chat/chatopen.svg",
+        "/app-chat/icons/icon-128x128.png",
+        "/app-chat/icons/icon-144x144.png",
+        "/app-chat/icons/icon-152x152.png",
+        "/app-chat/icons/icon-192x192.png",
+        "/app-chat/icons/icon-512x512.png",
+        "/app-chat/icons/icon-72x72.png",
+        "/app-chat/icons/icon-96x96.png",
+        "/app-chat/register.svg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/app-chat/chatopen.svg": "ed464696ac4938bda8699d7dbff47c9bf220d3c2",
+    "/app-chat/chunk-5M6RYT4N.js": "77a947cd6ac7c26fd57a70eb163bb2bcfba5fa67",
+    "/app-chat/chunk-IUOOMVWF.js": "55943b1ce4c351dea686a423f4ff3dfc94da3328",
+    "/app-chat/chunk-SKL7SYOU.js": "a3a3d6497c6635968f4f140e1c7ab685470bef58",
+    "/app-chat/chunk-XD6L3HVD.js": "0bf854fcc401465bab9f015e2720819ee085455d",
+    "/app-chat/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "/app-chat/icons/icon-128x128.png": "42c87819859bd7d194a7554dd9663da327541aef",
+    "/app-chat/icons/icon-144x144.png": "c6dccfebbc63d80058c33eb0c71fb919c676c86d",
+    "/app-chat/icons/icon-152x152.png": "0c4ad2795c3b1a3fd6c5e96f7e41448a6117df1f",
+    "/app-chat/icons/icon-192x192.png": "c6dccfebbc63d80058c33eb0c71fb919c676c86d",
+    "/app-chat/icons/icon-512x512.png": "0c4ad2795c3b1a3fd6c5e96f7e41448a6117df1f",
+    "/app-chat/icons/icon-72x72.png": "07a51f9aea31d1de267769a9e9362e337c22d3a7",
+    "/app-chat/icons/icon-96x96.png": "eb745b003d7086052aa89b69cc17ddbeec95a32c",
+    "/app-chat/index.html": "acecca8f8c4359e5cfe1f9b5e80b11c89116a7c5",
+    "/app-chat/main-M3PCKG6U.js": "c57a24a3cd678393fceb6589b79aac23b3bed593",
+    "/app-chat/manifest.webmanifest": "8d2ed3a817ee67230d7ad9250c9ca2312a968b0d",
+    "/app-chat/polyfills-B6TNHZQ6.js": "bf76ac291d7f51c1139b7edcf86b359a30c08c64",
+    "/app-chat/register.svg": "0a83c026098003831a7e297d77674a9a9baf7612",
+    "/app-chat/styles-CFUAOWLE.css": "87b5e57da1217be22d4449196560ed5242f80404"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
