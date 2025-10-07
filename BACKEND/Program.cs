@@ -76,6 +76,10 @@ builder.Services.AddAuthentication(opt =>
 
 var app = builder.Build();
 
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
+app.Urls.Add($"http://0.0.0.0:{port}");
+
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
