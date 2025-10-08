@@ -99,6 +99,7 @@ app.Urls.Add($"http://0.0.0.0:{port}");
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseDefaultFiles();
 app.UseStaticFiles();
 app.MapHub<ChatHub>("hubs/chat");
 app.MapHub<VideoChatHub>("hubs/video");
