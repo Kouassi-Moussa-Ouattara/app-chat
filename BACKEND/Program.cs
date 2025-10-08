@@ -93,7 +93,7 @@ app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowCredentials()
     dbContext.Database.Migrate();
 }*/
 
-var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
+var port = Environment.GetEnvironmentVariable("PORT") ?? "4200";
 app.Urls.Add($"http://0.0.0.0:{port}");
 
 app.UseHttpsRedirection();
