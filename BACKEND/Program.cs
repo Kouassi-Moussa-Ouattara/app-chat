@@ -87,11 +87,11 @@ app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowCredentials()
 .WithOrigins("http://localhost:4200", "https://localhost:4200"));
 
 //les migrations en attente
-using (var scope = app.Services.CreateScope())
+/*using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
     dbContext.Database.Migrate();
-}
+}*/
 
 var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
 app.Urls.Add($"http://0.0.0.0:{port}");
