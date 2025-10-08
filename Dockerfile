@@ -26,6 +26,6 @@ COPY --from=frontend /app/frontend/dist /app/wwwroot
 
 # Configuration Render
 ENV ASPNETCORE_URLS=http://+:$PORT
-EXPOSE 8080
+EXPOSE 5000
 
 ENTRYPOINT ["dotnet", "Backend.dll"]
