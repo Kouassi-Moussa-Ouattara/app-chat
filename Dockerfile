@@ -39,7 +39,7 @@ COPY --from=FRONTEND /app/FRONTEND/dist/frontend /app/wwwroot
 
 # Exposer le port dynamique Render
 ENV ASPNETCORE_URLS=http://+:$PORT
-EXPOSE 5000
+EXPOSE 4200
 
 # Démarrer l'application
 ENTRYPOINT ["dotnet", "BACKEND.dll"]
