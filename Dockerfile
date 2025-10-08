@@ -19,5 +19,6 @@ FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS runtime
 WORKDIR /app
 COPY --from=build /app/publish .
 COPY --from=frontend /app/frontend/dist /app/wwwroot
-EXPOSE 5000
+EXPOSE $PORT
+ENV ASPNETCORE_URLS=http://*:$PORT
 ENTRYPOINT ["dotnet", "BACKEND.dll"]
