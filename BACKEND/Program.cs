@@ -103,5 +103,6 @@ app.UseStaticFiles();
 app.MapHub<ChatHub>("hubs/chat");
 app.MapHub<VideoChatHub>("hubs/video");
 app.MapAccountEndpoint();
+app.MapFallbackToFile("index.html");
 
 app.Run();
