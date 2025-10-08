@@ -28,4 +28,4 @@ COPY --from=frontend /app/frontend/dist /app/wwwroot
 ENV ASPNETCORE_URLS=http://+:$PORT
 EXPOSE 5000
 
-ENTRYPOINT ["dotnet", "Backend.dll"]
+ENTRYPOINT ["dotnet", "BACKEND.dll"]
