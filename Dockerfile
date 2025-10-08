@@ -36,6 +36,9 @@ COPY --from=build /app/publish .
 # Copier le frontend compilé dans wwwroot
 COPY --from=frontend /app/frontend/dist /app/wwwroot
 
+COPY ./dist /app/wwwroot
+
+
 # Exposer le port dynamique Render
 ENV ASPNETCORE_URLS=http://+:$PORT
 EXPOSE 5000
