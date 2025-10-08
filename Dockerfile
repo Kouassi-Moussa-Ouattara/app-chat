@@ -11,7 +11,7 @@ WORKDIR /src
 COPY BACKEND/ ./BACKEND/
 COPY Chat.sln .
 RUN dotnet restore Chat.sln
-RUN dotnet publish BACKEND/BACKEND.csproj -c Release -o /app/out
+RUN dotnet publish BACKEND/Chat.csproj -c Release -o /app/out
 
 # Étape 3 : Image finale
 FROM mcr.microsoft.com/dotnet/aspnet:9.0
@@ -22,4 +22,4 @@ COPY --from=frontend /app/frontend/dist /app/wwwroot
 ENV ASPNETCORE_URLS=http://+:$PORT
 EXPOSE 8080
 
-ENTRYPOINT ["dotnet", "BACKEND.dll"]
+ENTRYPOINT ["dotnet", "Chat.dll"]
