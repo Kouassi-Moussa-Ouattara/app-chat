@@ -16,8 +16,8 @@ RUN dotnet publish -c Release -o /app/publish
 # -----------------------------
 # Étape 2 : Build frontend Angular
 # -----------------------------
-FROM node:22 AS frontend
-WORKDIR /app/frontend
+FROM node:22 AS FRONTEND
+WORKDIR /app/FRONTEND
 
 # Copier les fichiers frontend et installer les dépendances
 COPY FRONTEND/ ./
@@ -34,7 +34,7 @@ WORKDIR /app
 COPY --from=build /app/publish .
 
 # Copier le frontend compilé dans wwwroot
-COPY --from=frontend /app/frontend/dist /app/wwwroot
+COPY --from=FRONTEND /app/FRONTEND/dist/frontend /app/wwwroot
 
 
 # Exposer le port dynamique Render
