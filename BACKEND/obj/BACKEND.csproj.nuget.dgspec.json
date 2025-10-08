@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projet\\dotnet\\Chat\\backend\\BACKEND.csproj": {}
+    "E:\\Projet\\dotnet\\Chat\\BACKEND\\BACKEND.csproj": {}
   },
   "projects": {
-    "E:\\Projet\\dotnet\\Chat\\backend\\BACKEND.csproj": {
+    "E:\\Projet\\dotnet\\Chat\\BACKEND\\BACKEND.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projet\\dotnet\\Chat\\backend\\BACKEND.csproj",
+        "projectUniqueName": "E:\\Projet\\dotnet\\Chat\\BACKEND\\BACKEND.csproj",
         "projectName": "BACKEND",
-        "projectPath": "E:\\Projet\\dotnet\\Chat\\backend\\BACKEND.csproj",
+        "projectPath": "E:\\Projet\\dotnet\\Chat\\BACKEND\\BACKEND.csproj",
         "packagesPath": "C:\\Users\\kouas\\.nuget\\packages\\",
-        "outputPath": "E:\\Projet\\dotnet\\Chat\\backend\\obj\\",
+        "outputPath": "E:\\Projet\\dotnet\\Chat\\BACKEND\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

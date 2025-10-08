@@ -8,27 +8,24 @@ RUN npm run build --prod
 # Étape 2 : build du backend .NET 9
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
+COPY BACKEND/*.csproj ./BACKEND/
+WORKDIR /src/BACKEND
+RUN dotnet restore
+COPY BACKEND/ ./            
+RUN dotnet publish -c Release -o /app/publish
 
-# Copier le backend depuis la racine
-COPY *.csproj ./
-COPY *.sln ./
-COPY . ./
-
-RUN dotnet restore Chat.sln
-RUN dotnet publish Chat.csproj -c Release -o /app/publish
-
-# Étape 3 : image runtime
+# Étape 3 : image finale (runtime)
 FROM mcr.microsoft.com/dotnet/aspnet:9.0
 WORKDIR /app
 
-# Copier les fichiers du backend
+# Copie le backend compilé
 COPY --from=build /app/publish .
 
-# Copier le frontend Angular dans wwwroot
+# Copie le frontend Angular dans wwwroot
 COPY --from=frontend /app/frontend/dist /app/wwwroot
 
-# Configurer le port Render
+# Configuration Render
 ENV ASPNETCORE_URLS=http://+:$PORT
 EXPOSE 8080
 
-ENTRYPOINT ["dotnet", "Chat.dll"]
+ENTRYPOINT ["dotnet", "Backend.dll"]
